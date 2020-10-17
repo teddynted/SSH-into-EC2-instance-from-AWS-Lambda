@@ -3,7 +3,7 @@ service: ssh-ec2-instance
 provider:
   name: aws
   runtime: nodejs10.x
-  stage: ${opt:stage, 'dev'}
+  stage: dev
   region: us-east-1
   iamRoleStatements:
   - Effect: Allow
