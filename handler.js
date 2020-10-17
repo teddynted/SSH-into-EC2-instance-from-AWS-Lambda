@@ -19,7 +19,6 @@ const uploadFileToSftpServer = async (content, remoteFolder) => {
           const csv = json2csvParser.parse(content);
           // Define the name of the file to be uploaded to server
           const file = `colors.csv`;
-          console.log('file', file);
           const awsTempFolder = `/tmp/${file}`;
           // Create your file in a Lambda temporary folder/directory 
           fs.writeFileSync(awsTempFolder, csv);
