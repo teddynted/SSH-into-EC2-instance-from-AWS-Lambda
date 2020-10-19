@@ -5,7 +5,7 @@ const fs = require('fs');
 const uploadFileToSftpServer = async (content, remoteFolder) => {
       try {
           const connSettings = {
-            host: 'your-host',
+            host: 'public-ip-address',
             port: 22,
             username: 'ubuntu',
             privateKey: fs.readFileSync('./path/to/your/key.pem'),
